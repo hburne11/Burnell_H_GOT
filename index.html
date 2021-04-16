@@ -8,7 +8,8 @@
 </head>
 
 <body>
-  <main>
+    <main>
+
     <section id="imageContainer">
     	<div id="houseImages" style="right: 0"> <!-- add in all of the images to make a scrolling "banner" -->
     		<img src="images/stark.jpg"/>
@@ -17,9 +18,6 @@
     		<img src="images/tully.jpg"/>
     		<img src="images/greyjoy.jpg"/>
     		<img src="images/arryn.jpg"/>
-        <img src="images/targaryen.jpg" width="600px" height="360px"/>
-        <img src="images/frey.jpg" width="600px" height="360px"/>
-        <img src="images/tyrell.jpg" width="600px" height="360px"/>
         </div>
     </section>
 
@@ -34,38 +32,20 @@
             <li><div class="sigilContainer tully" data-offset="3"></div></li>
             <li><div class="sigilContainer greyjoy" data-offset="4"></div></li>
             <li><div class="sigilContainer arryn" data-offset="5"></div></li>
-            <li><div class="sigilContainer targaryen" data-offset="6"></div></li>
-            <li><div class="sigilContainer frey" data-offset="7"></div></li>
-            <li><div class="sigilContainer tyrell" data-offset="8"></div></li>
-
-
-
         </ul>
     </nav>
 
-
-
-    <h1>House &nbsp; Stark</h1><!-- replace this with the house name -->
+    <h1>House Stark</h1><!-- replace this with the house name -->
 
     <p class="house-info"></p><!-- replace this with house details (github gist) -->
 
     <!-- lightbox goes here -->
-    <section class="lightbox">
-        <h2 class="houseTitle">clever tagline goes here</h2>
-        <a href="#" class="close">X</a>
-        <video src="video/House-Stark.mp4"></video>
+    <section class="lightbox" id="lightbox">
+      <a href="#" class="close">X</a>
+      <video src="video/House-Stark.mp4" controls></video>
     </section>
 
-    <div class="videoControls">
-        <ul>
-            <li class="play"><img src="images/play.svg" alt="play-button"></li>
-            <li class="pause"><img src="images/pause.svg" alt="pause-button"></li>
-            <li class="rewind"><img src="images/rewind.svg" alt="rewind"></li>
 
-
-            </li>
-        </ul>
-    </div>
     <!-- end lightbox -->
 </main>
 
