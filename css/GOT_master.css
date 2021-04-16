@@ -36,7 +36,7 @@ main {
 	overflow:hidden;
 }
 
-#houseImages { position:relative; width:6000px; transition: all .5s; }
+#houseImages { position:relative; width:4000px; transition: all .5s; }
 #houseImages img { float:left; }
 
 #bottomNav { margin-top:30px; }
@@ -55,7 +55,7 @@ main {
 	width:51px;
 	height:54px;
 	display:inline-block;
-  overflow:hidden;
+	overflow:hidden;
 	background-image:url(../images/GOT_sprites.png);
 	background-repeat:no-repeat;
 	transition:transform .3s;
@@ -63,32 +63,23 @@ main {
 	-moz-transition:-moz-transform .3s;
 }
 
-.stark { background-position:-15px -54px; }
-.stark:hover { background-position:-13px 0px; }
+.stark { background-position:0px -54px; }
+.stark:hover { background-position:0px 0px; }
 
-.baratheon { background-position:-67px -54px; }
-.baratheon:hover { background-position:-65.5px 0px; }
+.baratheon { background-position:-50.5px -54px; }
+.baratheon:hover { background-position:-51px 0px; }
 
-.lannister { background-position:-118px -54px; }
-.lannister:hover { background-position:-117px 0px; }
+.lannister { background-position:-101px -54px; }
+.lannister:hover { background-position:-101px 0px; }
 
-.tully { background-position:-169px -54px; }
-.tully:hover { background-position:-169px 0px; }
+.tully { background-position:-152px -54px; }
+.tully:hover { background-position:-152px 0px; }
 
-.greyjoy { background-position:-219px -54px; }
-.greyjoy:hover { background-position:-219px 0px; }
+.greyjoy { background-position:-202px -54px; }
+.greyjoy:hover { background-position:-202px 0px; }
 
-.arryn { background-position:-270px -54px; }
-.arryn:hover { background-position:-270px 0px; }
-
-.targaryen { background-position:-323px -54px; }
-.targaryen:hover { background-position:-323px 0px; }
-
-.frey { background-position:-373px -54px; }
-.frey:hover { background-position:-373px 0px; }
-
-.tyrell { background-position:-425px -54px; }
-.tyrell:hover { background-position:-425px 0px; }
+.arryn { background-position:-253px -54px; }
+.arryn:hover { background-position:-253px 0px; }
 /* ----- end image sprite ----- */
 
 /* ----- classes for transitions ----- */
@@ -106,33 +97,27 @@ main {
 }
 
 /* add styles here for lightbox and video */
-.lightbox{
-	display: none;
-	position: absolute;
-	left: 0;
-	top: 0;
+.lightbox {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
 
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
-.show-lightbox{
-	display: block;
-}
+.show-lightbox { display: block; }
 
-/* close button */
 .lightbox .close {
-	float: right;
-  margin-right: 30px;
-	font-size: 25px;
-	color: white;
-	text-decoration: none;
-}
-.close:hover{
-  color: blue;
+  float: right;
+  margin-right: 30px;;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
 }
 
 .house-info {
@@ -145,33 +130,6 @@ main {
 }
 
 video {
-  margin-top: 400px;
-	width: 25%;
-	border: thin solid #949393;
-}
-
-.videoControls{
-
 	width: 65%;
-	margin:  0 auto;
-	text-align: center;
-	margin-top: 20px;
-
-}
-.videoControls ul{
-
-	display: flex;
-	flex-direction: row;
-
-}
-.videoControls ul li img{
-  background-color: white;
-	width: 60px;
-	height: 60px;
-	margin-left: 20px;
-	transition: all 0.3s ease-in-out;
-}
-.videoControls ul li img:hover {
-	cursor: pointer;
-	filter: invert(0.9);
+	border: thin solid #949393;
 }
